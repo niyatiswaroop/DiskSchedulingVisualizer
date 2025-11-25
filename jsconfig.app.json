@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting / flexibility */
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": false,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
+
+    /* If you have .js/.jsx files and want TS tooling to include them, enable allowJs.
+       If you only use .ts/.tsx, you can remove or set to false. */
+    "allowJs": true,
+
+    /* Make vite client types available to the project */
+    "types": ["vite/client"]
+  },
+
+  /* include all folders where your source files live */
+  "include": ["src", "pages", "components", "app", "index.d.ts", "vite-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+}
